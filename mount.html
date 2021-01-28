@@ -66,7 +66,38 @@
    {
        font-size: 12px;
    }
-   
+   .hotelbtn
+   {
+         background: transparent;
+       
+         border: transparent;
+         border-right: 2px solid white;
+         width: 140px;
+         margin-left: 20px;
+         height: 70px;
+         
+   }
+   .htext
+   {
+     color: white;
+     font-style: italic;
+     font-family: cursive;
+     font-size: 13px;
+   }
+   .hotelicon
+   {
+         color: white;
+         font-size: 30px;
+        
+   }
+   .chirkut
+   {
+      background-color: white;
+      border: 0px;
+      height: 50px;
+      width: ;
+
+   }
 </style>
 <body>
   <div class="row firstpic" style="height: 500px;">
@@ -81,28 +112,28 @@
       <button class="btn btn-secondary">Cruis  <i class="fas fa-caret-down"></i></button>
       <button class="btn btn-secondary">Tours  <i class="fas fa-caret-down"></i></button>
       </span>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <button class="btn btn-secondary"> <span style="padding: top;">hotel</span> <i class="fas fa-hotel fa-2x"></i></button>
-          <button class="btn btn-secondary"> <i class="fas fa-plane fa-2x "></i></button>
-          <button class="btn btn-secondary"> <i class="fas fa-car fa-2x"></i></button>
-          <button class="btn btn-secondary"><i class="fas fa-umbrella-beach fa-2x"></i></button>
-          <button class="btn btn-secondary"><i class="fas fa-box-open fa-2x"></i></button>
-          <button class="btn btn-secondary"> <i class="fas fa-ship fa-2x"></i></button>
-    
-        </div>
+      <div class="row text-center" style=" margin-top: 100px;">
+        <div class="col-md-12 text-center container" > 
+          <button class="hotelbtn"> <span class="hotelicon"> <span class="htext">Hotel</span><br><i class="fas fa-hotel "></i></span></button>
+          <button class="hotelbtn">  <span class="hotelicon"> <span class="htext">Flight</span><br><i class="fas fa-plane  "></i></span> </button>
+          <button class="hotelbtn">  <span class="hotelicon"><span class="htext"> Car</span><br><i class="fas fa-car "></i></span></button>
+          <button class="hotelbtn"><span class="hotelicon"><span class="htext"> Tour</span><br><i class="fas fa-umbrella-beach "></i></span></button>
+          <button class="hotelbtn">  <span class="hotelicon"><span class="htext">Package</span><br><i class="fas fa-box-open "></i></span></button>
+          <button class="hotelbtn"  style="border-right: transparent;"><span class="hotelicon"><span class="htext">Cruise</span><br><i class="fas fa-ship "></i></span></button>
+         </div>
       </div>
-      <div class="row text-center" style="background-: transparent;">
-        <div class="col-md-7 container" style="background:transparent;">
-          <div class="row text-left">
+      <div class="row text-center" style="margin-top: 20px;" style="background-color:skyblue ;">
+        <div class="col-md-8 container" style="background-color:skyblue  ;" >
+          <div class="row text-left" style="background-color:skyblue ;">
             <div class="col-md-12">
-              <div class="card" style="background-color: light rgba(253, 253, 253, 0.253);">
+              <div class="card" style="background-color:rgb(178, 222, 240) ">
                 <div class="card-body">
                   <span style="font-size: 25px; font-family: inherit cursive;"> Where would you like to go ?</span> <br>
-                  <button class="btn btn-secondary"> <span style="color:green; font-family: cursive;">Destination:</span> <span style="font-size: 12px; font-family: cursive; color: grey;"> Country,City, Airport,Area Landmark</span></button>
-                   <button class="btn btn-secondary"><span style="color: green; font-family: cursive;">Check out</span></button>
-                   <button class="btn btn-secondary"><span style="color: green; font-family: cursive;">Guest <span style="color: grey;"><i class="fas fa-caret-down"></i></span> </span></button>
-                   <button class="btn btn-secondary" style="background-color: green;"><span style="color: white; font-family: cursive;">search <i class="fas fa-search"></i></span></button>
+                  <button class=" chirkut"> <span style="color:green; font-family: cursive;">Destination:</span> <input type="text" placeholder=" Country,City, Airport,Area Landmark" style="border: 0px; outline: none; font-size: 12px; font-family: cursive; width: 250px;"></button>
+                   <button class=" chirkut"><span style="color: green; font-family: cursive;">Check in &nbsp;&nbsp; &nbsp;  <i class="far fa-calendar-alt"></i></span></button>
+                   <button class=" chirkut"><span style="color: green; font-family: cursive;">Check out &nbsp;&nbsp; &nbsp;  <i class="far fa-calendar-alt"></i></span></button>
+                   <button class=" chirkut"><span style="color: green; font-family: cursive;">Guest &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  <span style="color: grey;"><i class="fas fa-caret-down"></i></span> </span></button>
+                   <button class=" chirkut"><span style="color:green; font-family: cursive; ">search &nbsp; &nbsp; &nbsp;    <i class="fas fa-search"></i></span></button>
     
                 </div>
     
@@ -123,7 +154,7 @@
   </div>
   <div class="row"  style="background-color:rgb(192, 184, 184);">
     <div class="col-md-12" style="margin-top: 3%;">
-        <span style="font-size: 40px; margin-left:12% ; font-family: inherit cursive;"> Top Travel Destinations</span>
+        <span style="font-size: 40px; margin-left:12% ; font-family: inherit cursive; color: black;"> Top Travel Destinations</span>
       <span style="margin-left:40% ;" ><button class="btn btn-secondary" style="color: black; font-size: 12px;" >VIEW ALL <i class="fas fa-arrow-right"></i></button></span>  
     </div>
     <hr>
@@ -140,7 +171,7 @@
 
            <div class="card cardfirst" >
       
-    <span>    <i class="fas fa-map-marker-alt"></i>  <span style="font-family: inherit;">  <b> Recommended for you</b></span></span>
+    <span style="color: black;">    <i class="fas fa-map-marker-alt"></i>  <span style="font-family: inherit; color: black; ">  <b> Recommended for you</b></span></span>
 
              </div>
 
@@ -235,6 +266,8 @@
     </div>
 
 </div>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
 
   
   
